@@ -1,3 +1,25 @@
+body {
+  background-color: black;
+}
 h1 {
+  text-align: center;
+  color: brown;
+}
+h2 {
+  text-align: center;
+}
+button {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+footer {
+  text-align: center;
   color: brown;
 }
