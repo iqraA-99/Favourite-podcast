@@ -20,6 +20,8 @@ button {
   margin: auto;
   margin-bottom: 20px;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 img {
   width: 200px;
@@ -52,4 +54,12 @@ ul.navigation {
   font-size: 17px;
   transition: background-color 0.3 ease;
   border-radius: 5px;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
