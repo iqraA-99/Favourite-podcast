@@ -57,10 +57,29 @@ ul.navigation {
 }
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 60px auto;
   background: white;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+}
+
+ul.navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* This will allow the items to wrap onto the next line if needed */
+  background-color: brown;
+  padding: 10px 0;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  transition: background-color 0.3 ease;
+  border-radius: 5px;
 }
