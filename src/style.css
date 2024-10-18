@@ -32,6 +32,11 @@ img {
 footer {
   text-align: center;
   color: brown;
+  background-color: #333;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 ul.navigation {
