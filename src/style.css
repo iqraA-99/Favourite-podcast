@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   background-color: #222;
   color: white;
@@ -7,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Hero Section */
 .hero {
   background: url("https://i.scdn.co/image/ab6765630000ba8a099a357ed0a2a39424f2903d")
     no-repeat center center/cover;
@@ -19,11 +17,11 @@ body {
   text-align: center;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3.5rem;
 }
 
-.hero h2 {
+.hero-content h2 {
   font-size: 1.5rem;
   margin: 10px 0;
 }
@@ -37,7 +35,6 @@ body {
   cursor: pointer;
 }
 
-/* Navigation */
 .navigation {
   background-color: #333;
   padding: 15px 0;
@@ -58,7 +55,6 @@ body {
   font-size: 1rem;
 }
 
-/* Sections */
 .section {
   max-width: 1200px;
   margin: 30px auto;
@@ -67,30 +63,46 @@ body {
 }
 
 .about,
-.episodes {
+.episodes,
+.highlights,
+.fun-facts,
+.map {
   background: #333;
   color: #e1e3e1;
+  border-radius: 10px;
 }
 
-.episode-grid {
+.episode-grid,
+.highlight-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.episode {
+.episode,
+.highlight {
   background-color: #444;
   padding: 15px;
   border-radius: 10px;
 }
 
-/* Footer */
+.fun-facts p {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.map iframe {
+  border-radius: 10px;
+  border: 2px solid #ff6f61;
+}
+
 .footer {
   text-align: center;
   background-color: #1d3557;
   color: white;
   padding: 20px;
 }
+
 .footer a {
   color: #ff6f61;
   text-decoration: none;
