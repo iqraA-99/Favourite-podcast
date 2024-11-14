@@ -182,7 +182,7 @@ body {
 
 .button {
   padding: 10px 20px;
-  background-color: #ff5733;
+  background-color: #991f1f;
   color: white;
   border: none;
   border-radius: 5px;
@@ -212,4 +212,32 @@ body {
 .image-container:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+.listen-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+#about h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #b30000;
+}
+
+.video-container {
+  max-width: 320px;
+  margin: 20px auto;
 }

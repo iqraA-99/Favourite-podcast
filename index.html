@@ -9,9 +9,39 @@
   <body>
     <header class="hero" id="home">
       <div class="hero-content">
-        <h1>🎙️ Stephanie Soo's Rotten Mango</h1>
+        <h1>Stephanie Soo's Rotten Mango</h1>
         <h2>Exploring real-life cases with care, compassion, and detail</h2>
         <a href="#episodes"><button class="hero-button">Listen Now</button></a>
+
+        <div class="listen-icons">
+          <a
+            href="https://open.spotify.com/show/2DZwvzn6Z3xCFZrwZGDrbj?si=fd73b228d00043cc&nd=1&dlsi=7f16e47a0ff9433f"
+            target="_blank"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/5968/5968959.png"
+              alt="Spotify"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://podcasts.apple.com/us/podcast/rotten-mango/id1517954480"
+            target="_blank"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/831/831299.png"
+              alt="Apple Podcasts"
+              class="icon"
+            />
+          </a>
+          <a href="https://www.youtube.com/@rottenmangopod" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
+              alt="YouTube"
+              class="icon"
+            />
+          </a>
+        </div>
       </div>
     </header>
 
@@ -25,7 +55,7 @@
     </nav>
 
     <section id="about" class="section about">
-      <h3>About the Podcast</h3>
+      <h3>About the Podcast 🎙️</h3>
       <div class="image-container">
         <img
           src="https://cdn-images-3.listennotes.com/podcasts/rotten-mango-stephanie-soo-1VdketbQzMX-IUGkjYVHWTK.1400x1400.jpg"
@@ -38,6 +68,19 @@
         for her storytelling, Stephanie brings each case to life, giving a voice
         to those affected.
       </p>
+
+      <button onclick="showFunFact()" class="button">Fun Fact</button>
+
+      <div class="video-container">
+        <iframe
+          src="https://open.spotify.com/embed/episode/5A4BS0amUfEC7rFa4QVHWg"
+          width="100%"
+          height="150"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
     <section id="episodes" class="section episodes">
@@ -120,7 +163,19 @@
     </section>
 
     <footer class="footer">
-      <p>Coded by Iqra Ahmed. <a href="#">Open sourced on GitHub</a></p>
+      <p>
+        Coded by Iqra Ahmed.
+        <a
+          href="https://github.com/iqraA-99/Favourite-podcast/tree/main"
+          target="_blank"
+          >Open sourced on GitHub</a
+        >
+        and
+        <a href="https://favouritepodcastshecodes.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </p>
     </footer>
+    <script src="src/script.js"></script>
   </body>
 </html>
