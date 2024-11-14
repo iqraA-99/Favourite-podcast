@@ -4,13 +4,13 @@ body {
   font-family: "Spectral", serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://images.squarespace-cdn.com/content/v1/6032bc0de5d0ef22a23208ae/b20e92ec-7b36-478c-b3b3-757af1935d34/HERO+IMAGE+%283%29.png")
       no-repeat center center/cover;
-  background-size: cover;
   color: #f0f0f0;
   height: 70vh;
   display: flex;
@@ -25,12 +25,6 @@ body {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.hero-content h2 {
-  font-size: 1.5rem;
-  color: #d9d9d9;
-  margin: 10px 0;
-}
-
 .hero-button {
   padding: 12px 25px;
   background-color: #b30000;
@@ -38,7 +32,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -79,6 +72,7 @@ body {
   background: #1f1f1f;
   color: #e0e0e0;
   border-radius: 10px;
+  text-align: center;
 }
 
 .section h3 {
@@ -167,9 +161,10 @@ body {
   text-decoration: none;
 }
 
-.review-grid {
-  display: flex;
-  flex-direction: column;
+.review-grid,
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -183,4 +178,38 @@ body {
 .review p {
   margin: 0;
   font-style: italic;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c70039;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
