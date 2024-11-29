@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stephanie Soo's Rotten Mango Podcast</title>
     <style>
+      html,
+      body {
+        height: auto;
+        overflow: visible;
+      }
+
       body {
         background-color: #121212;
         color: #e0e0e0;
@@ -24,12 +30,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        position: relative;
+        z-index: 1;
       }
 
       .hero-content h1 {
         font-size: 3.5rem;
         color: #b30000;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        position: relative;
+        z-index: 2;
       }
 
       .hero-button {
@@ -50,6 +60,9 @@
       .navigation {
         background-color: #1c1c1c;
         padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
       }
 
       .navigation ul {
@@ -208,12 +221,6 @@
         transition: transform 0.3s ease;
         margin: 0 auto;
         display: block;
-      }
-
-      .episode-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
       }
 
       .image-container:hover img {
